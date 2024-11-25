@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #2e2e4f);
+    color: #ffffff;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    background: #12121b;
+    border-bottom: 1px solid #444;
+    color: #ffffff;
+    font-weight: 800;
+  }
+
+  
+  header img {
+    height: 45px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 800;
+  }
+  
+  nav a:hover {
+    color: #1affd6;
+  }
+  
+  /* Main Layout */
+  main {
+    display: flex;
+    height: calc(100vh - 100px);
+  }
+  
+  .chat-section {
+    flex: 5;
+    padding: 1rem;
+    background: #f9fafb;
+  }
+  
+  .chat-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .faq-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #222236;
+    color: #ffffff;
+    padding: 2rem;
+    max-width:800px;
+    margin: 0 auto;
+}
+
+.faq-carousel h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Amarillo para destacar */
+}
+
+.faq-description {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #cccccc; /* Gris claro */
+}
+
+.faq-wrapper {
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.faq-slide {
+  transition: transform 0.5s ease-in-out; /* Suave transición al cambiar */
+  display: flex;
+  justify-items: center;
+
+}
+
+.faq-item {
+    padding: 1rem;
+    background: #1e1e2f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    text-align: left;
+}
+
+.faq-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #1affd6;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.faq-item a {
+  color: #8dffeb; /* Cambia este color al que desees */
+  text-decoration: underline; /* Añade subrayado si lo prefieres */
+  font-weight: bold; /* Para destacar más */
+  transition: color 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+
+.faq-item a:hover {
+  color: #1affd6; /* Cambia el color cuando se pasa el cursor */
+  text-decoration: none; /* Quita el subrayado al pasar el cursor */
+}
+
+
+.section {
+  padding: 0%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.section-separator {
+  width: 100%;
+  height: 120px; /* Grosor del separador */
+  background-color: #12121b; /* Color sólido del separador */
+  margin: 3rem 0; /* Espaciado arriba y abajo */
+  border-radius: 2px; /* Redondeo en las esquinas */
+}
+
+.ask-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Espaciado entre las columnas */
+  justify-content: center;
+}
+
+.ask-item {
+  flex: 1 1 calc(50% - 1rem); /* Ajusta para dos columnas con espacio */
+  box-sizing: border-box;
+  padding: 1rem;
+  background: #1e1e2f;
+  color: #ffffff;
+  border-radius: 8px;
+  margin: 0.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación */
+}
+
+.ask-item:hover {
+  transform: scale(1.02); /* Crece un poco al pasar el cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+}
+
+.ask-item h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.ask-item p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.ask-item a {
+  color: #4CAF50; /* Color del enlace */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ask-item a:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  background: #12121b; /* Color oscuro para el fondo */
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 100px; /* Tamaño del logo */
+  margin-bottom: 0rem;
+}
+
+.footer-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff; /* Resalta el título */
+}
+
+.footer-text p, .footer-text ul {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #b0b0b0; /* Color más claro para el texto */
+}
+
+.footer-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-text li {
+  margin: 0.3rem 0;
+}
