@@ -15,10 +15,13 @@ body {
     background: #12121b;
     border-bottom: 1px solid #444;
     color: #ffffff;
-    font-weight: 800;
+    font-weight: 300;
   }
 
-  
+  h3{
+    font-size: medium;
+  }
+
   header img {
     height: 45px;
   }
@@ -28,6 +31,7 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-weight: 800;
+    font-size: small;
   }
   
   nav a:hover {
@@ -230,4 +234,52 @@ body {
 
 .footer-text li {
   margin: 0.3rem 0;
+}
+
+/* Consultas de medios (Media Queries) */
+@media (min-width: 600px) {
+  main {
+      flex-direction: row; /* Dos columnas en pantallas más grandes */
+  }
+
+  .chat-section {
+      flex: 5;
+  }
+
+  .faq-carousel {
+      flex: 4;
+  }
+
+  .faq-slide {
+      flex-direction: row; /* Filas para pantallas grandes */
+  }
+}
+
+@media (min-width: 768px) {
+  .faq-item {
+      max-width: 700px;
+  }
+
+  header img {
+      height: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+      height: calc(100vh - 100px);
+  }
+
+  .chat-section iframe {
+      height: 100%;
+  }
+
+  .ask-container {
+      flex-direction: row; /* Dos columnas en pantallas grandes */
+      flex-wrap: wrap;
+  }
+
+  .ask-item {
+      flex: 1 1 calc(50% - 1rem);
+  }
 }
